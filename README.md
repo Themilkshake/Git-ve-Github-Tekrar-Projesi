@@ -7,6 +7,5 @@
 
 Bu proje sadece Git ve GitHUB hakkında pratik yapmak üzere açılmıştır. Eğer isterseniz dokümanlardaki txt dosyasından notlarıma ulaşabilirsiniz. 
 
-- Seydi Ali İçlek
-
+Seydi Ali İçlek
 [Linkedin](https://www.linkedin.com/in/seydi-ali-iclek)
