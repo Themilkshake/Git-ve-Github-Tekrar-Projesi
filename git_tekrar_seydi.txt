@@ -60,6 +60,18 @@ Yeni Git bağlarken;
 2.	Git push -u origin <master (branch adı)>
 3.	Daha sonrasında ise sırasıyla git add, git commit, git push origin master.
 
+
+Yeni Git bağlarken 2;
+1.Repository kuruyoruz ve bilgisayarımıza clone'luyoruz.
+git clone <reposity_adresi>
+
+2.İndirdiğimiz Dosyada Git kurulu mu bakıyoruz.
+Git status (kurulu olması gerekiyor.)
+
+3.Editörümüzü açıyoruz ve dosyalarımızı oluşturup projemize başlıyoruz
+
+
+
 Git push origin <Branch_adi>  --> branch’i push’lar.
 Pull request: branch’leri birleştirmek demek (GitHUB üzerinden merge etmek).
 Git branch -r --> GitHUB’daki branch’leri gösterir.
