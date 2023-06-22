@@ -59,3 +59,30 @@ Yeni Git bağlarken;
 1.	Git remote add origin <adres>
 2.	Git push -u origin <master (branch adı)>
 3.	Daha sonrasında ise sırasıyla git add, git commit, git push origin master.
+
+Git push origin <Branch_adi>  --> branch’i push’lar.
+Pull request: branch’leri birleştirmek demek (GitHUB üzerinden merge etmek).
+Git branch -r --> GitHUB’daki branch’leri gösterir.
+Fetch: geri getir, al getir, bana getir. 
+Git fetch origin master --> GitHUB üzerinden birleştirilen branch’leri Git’imize revize etmek (local repomuza/Git’imize getiriyor fakat değişiklik yapmıyor.) (optimize etmek).
+Git pull --> GitHUB üzerinden birleştirilen branch’leri Git’imize aktarmak (lokal Git’imize çekiyoruz.) (git pull origin master = Fetch + Merge) (optimize etmek).
+
+GitHUB üzerinden birleştirilen branch’leri Git’imize aktarmak
+1.	Git fetch origin master
+2.	Git status
+3.	Git pull
+
+Git clone <repository_adresi> --> Git’in bulunduğu dizine o repository’i atar.
+Fork: GitHUB üzerinden başkasının repository’sini kendi hesabımıza klonluyoruz ve bu şekilde o reposity’de oynamalar yapabiliyoruz. Projeyi forkladıktan sonra kendi klasörümüze “clone” kullanarak indiriyoruz ve Git’imizin lokalini o dosya yapıyoruz. Bu sayede o klasörde oynamalar yapabilir ve kendi hesabımızdaki klona push’layabiliriz.
+
+Collaborators: işbirlikçiler.
+Private repository’lere başkalarının erişebilmesi için collaborators kısmına o kullanıcıyı eklememiz gerekiyor. Daha sonrasında o kullanıcı o repository’i clone’layıp içerisinde düzenlemeler yapabilir.
+
+Readme.md
+Repository’ler için portfolyo oluşturmak için iyi bir kullanım sunuyor.
+•	GitHUB md Cheatsheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+https://codersclub.co/en
+
+
+•	VSC’de buradaki komutların hepsi bulunmakta. Oradan da kontrol edebiliriz.
