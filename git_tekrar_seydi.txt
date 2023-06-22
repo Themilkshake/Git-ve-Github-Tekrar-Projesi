@@ -1,0 +1,88 @@
+Pwd --> güncel olarak bulunduğun klasörü göster.
+ls --> Bulunduğun klasörde yazan dosyaları gösterir.
+cd Desktop --> Desktop klasörüne gider.
+Cd .. --> Desktop klasöründen geri döner.
+Mkdir --> (make directory) klasör oluşturur.
+Touch dosya_adi.txt --> dosya oluşturur.
+Clear --> consolu temizle.
+rm dosya_adi.txt --> sadece dosyayi kaldırır.
+Rm -rf dosya_adi.txt --> sadece klasörü kaldırır.
+Ls -la --> gizli dosyaları gösterir.
+Repository --> projenin komutlarının tutulduğu depo.
+
+---
+
+Git status --> güncel git durumunu gösterir.
+Git init --> genel giti o klasöre kurar.
+Git add --> dosyalari gite commit etmek üzere seçer.
+Git add . --> o dizindeki herşeyi ekler.
+Git commit -m “commitin yorumu buraya yazılır.” --> seçili dosyaları commit eder (repository’e gönderir).
+Git log --> atılan commitleri gösterir.
+Git merge branch_ismi --> branchleri birleştirir.
+
+Bir dosyaya ilk git kurma komutları
+1.Git status yazarak gitin kurulu olup olmadığına bakıyoruz.
+2.Git init yazarak gitimizi kuruyoruz.
+3.Git status yazarak gitimizin kurulup kurulmadığını kontrol ediyoruz.
+
+
+Touch .gitignore --> o dizindeki dosyalardan bazılarını istemiyorsak gizli hale getirmek için o dosyanın ismini .ignore dosyasının içine yazıyoruz.
+Git log –oneline --> özet olarak commitlerin mesajlarını gösterir
+
+
+Git branch branch_ismi --> yeni branch açar.
+Git branch --> branch’leri gösterir.
+Git switch feature --> branch’ler arası geçiş yapar.
+
+
+
+Fast-Forward Merge: Feature branch’iniz master’a merge olacağı anda eğer master üzerinde bir değişiklik (commit) olmamışsa, git varsayılan olarak master hattının son commit hash’i olarak, feature branch’in hash’ini alır. Bu duruma Fast-Forward Merging denir.
+ 
+
+stash komutu, değişiklikleri geçici olarak raflara ayırır. Üzerinde çalıştığınız değişiklikleri raflara ayırdıktan sonra başka bir işe geçebilir ve daha sonra geldiğinizde aynı değişiklikleri raftan alıp üzerinde çalışmaya devam edebilirsiniz.
+
+Bir branchte henüz commitlemeye hazır olmayan değişiklikleriniz var ve bu değişiklikleri kaybetmeden (ve commitlemeden) farklı bir branche geçmek istiyorsunuz, döndüğünüzde ise değişiklikleri bıraktığınız gibi bulmak istiyorsanız ‘stash’ aradığınız komut.
+
+Değişiklikleri stash’e almak için önce ‘git stash’ komutunu çalıştırıyoruz.
+ 
+
+
+Git restore dosya_adi.txt --> bir önceki branch’e geri gelir.
+Git checkout branch_adi --> o branch’e geri döner.
+Git reset –-hard <comiit_ismi> --> o commite geri döner, fakat o commite kadar olanları siler. İçeriği de siler
+Git reset --> o commite geri döner, fakat o commite kadar olanları siler. İçeriği silmez.
+Git diff --> tekrar bakarsın.
+Git rebase --> sırasız merge’leri sıralı hale (önce Masterlar  sonra feat’ler sırası ile) döndürür.
+Stash’e tekrar bak.
+
+Yeni Git bağlarken;
+1.	Git remote add origin <adres>
+2.	Git push -u origin <master (branch adı)>
+3.	Daha sonrasında ise sırasıyla git add, git commit, git push origin master.
+
+Git push origin <Branch_adi>  --> branch’i push’lar.
+Pull request: branch’leri birleştirmek demek (GitHUB üzerinden merge etmek).
+Git branch -r --> GitHUB’daki branch’leri gösterir.
+Fetch: geri getir, al getir, bana getir. 
+Git fetch origin master --> GitHUB üzerinden birleştirilen branch’leri Git’imize revize etmek (local repomuza/Git’imize getiriyor fakat değişiklik yapmıyor.) (optimize etmek).
+Git pull --> GitHUB üzerinden birleştirilen branch’leri Git’imize aktarmak (lokal Git’imize çekiyoruz.) (git pull origin master = Fetch + Merge) (optimize etmek).
+
+GitHUB üzerinden birleştirilen branch’leri Git’imize aktarmak
+1.	Git fetch origin master
+2.	Git status
+3.	Git pull
+
+Git clone <repository_adresi> --> Git’in bulunduğu dizine o repository’i atar.
+Fork: GitHUB üzerinden başkasının repository’sini kendi hesabımıza klonluyoruz ve bu şekilde o reposity’de oynamalar yapabiliyoruz. Projeyi forkladıktan sonra kendi klasörümüze “clone” kullanarak indiriyoruz ve Git’imizin lokalini o dosya yapıyoruz. Bu sayede o klasörde oynamalar yapabilir ve kendi hesabımızdaki klona push’layabiliriz.
+
+Collaborators: işbirlikçiler.
+Private repository’lere başkalarının erişebilmesi için collaborators kısmına o kullanıcıyı eklememiz gerekiyor. Daha sonrasında o kullanıcı o repository’i clone’layıp içerisinde düzenlemeler yapabilir.
+
+Readme.md
+Repository’ler için portfolyo oluşturmak için iyi bir kullanım sunuyor.
+•	GitHUB md Cheatsheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+https://codersclub.co/en
+
+
+•	VSC’de buradaki komutların hepsi bulunmakta. Oradan da kontrol edebiliriz.
