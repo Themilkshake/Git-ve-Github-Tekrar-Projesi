@@ -1,0 +1,56 @@
+                 -Temel Komutlar-
+cd = change directory (klasör değiştir)
+pwd = print working directory (güncel olarak bulunnduğum klasör)
+cd .. = bir önceki klasöre geçmek için kullanılır.
+mkdir klasörismi =(Make Directory) klsör oluşturur
+touch dosyaismi.txt,py,vs... = istediğiniz türden dosya olusşturur.
+rm dosyaadı = remove(dosyaı siler)
+rm -rf klasör adı = klasör siler
+clear = konsolu temizler
+ls = bulunduğumuz klasörde bulunan dosyaları gösterir
+ls -la = bulunduğumuz klasördeki gizli dosyaları gösteriri
+---------------------o--------------------------------
+             -Git İle İlgili Komutlar-
+
+------------         ------------        ------------
+
+ÇALIŞMA KLASÖRÜ    
+                     INDEX-STATİNG             
+                                           LOCAL REPOSİTORY                               
+                 ---                ---  
+               GİT ADD           GİT COMMİT
+------------         ------------        ------------
+
+git config --global user.name "isim soyisim" = git kullancı adı değişir
+git config --global user.email e mail = git email i değişir
+git = yardım dokümanı
+git status = güncel git durumu
+git init = master gitini o klasöre kurar
+git add = dosyayı  gite commit etmek üzere seçer (commit etmeye hazır eder)
+git add . = o dizindeki her şeyi ekler 
+git commit -m "yazılacak mesaj"= seçili dosyaları commit eder repository e gönderir
+git log = atılan commitleri gösterir
+git merge branch_ismi = branchleri birleştirir
+git branch = (dal demek dallanmak budaklanmak)branchleri gösterir
+git switch branch_ismi = branch değiştirir
+touch .gitignore = (görmezden gelme) bir dosyayı commit etmek istemiyorsak bu .gitignor dosyasının içini o dosyanın adı yazıyoruz ve gizleniyor
+git stash = değişiklikleri klasör,sahne,repository den ayrı bir yere atar
+git stash pop = yapılan stash açığa çıkar
+git stash apply stashkodu= o stash i çıkarır
+git stash list = stashleri listeler
+git stahs clear = stashleri siler
+git restore dosyaadı = addlemeden comitlemeden önce değişiklikleri geri alır
+git checkout commit ıd = o commit e geri döner
+git reset --hard commitkodu = seçtiğimiz commite geri döner ancak ondan önceki commitleri içindekiler ile beraber siler
+git reset commitkodu = seçtiğimiz commite geri döner anacak içeriği silmez commiti siler
+git diff commit ıd1 commit ıd2 = diffrens (farkları göster) iki commit arasındaki farkı gösterir
+git revet commit ıd = seçtiğimiz commiten devam edeceğiz ancak hiç bit şeyi silmeden yeni bir committen 
+git rebase branchismi = kronolojiye bakılmaksızın hepsini tek bir branche birleştitiyor
+git fetch origin branch = githubdaki değişiklikleri gitimizde görüyoruz bu komut bize bunu sağlıyor
+git pull origin branch = değişikleri gitimize çekiyor
+git remote add origin url site ismi =push edeceğimiz site ismi
+git push -u origin branch = değişiklikleri yenilkleri 
+github a push eder
+git clone indireceğimiz url = seçtiğimiz url indirir
+
+ İki günük git ve github öğrenme serüvenimde acemice çıkardığım notların sonuna geldim. Eğer hatam varsa affola  saygı ve sevgilerimle...
